@@ -28,6 +28,7 @@
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+        <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -1741,6 +1742,48 @@
         </object-type>
         <object-type name="sprNewRecord" sid="575138794876543">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite3" sid="615943974449532">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="757511579552416" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Asteroide" sid="777664036365090">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="size" sid="168196229587407" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Wrap" sid="775948485954351">
+                    <behavior id="wrap" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="112580859354636">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="16" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="218862382011218" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0015.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

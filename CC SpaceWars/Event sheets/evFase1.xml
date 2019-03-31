@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evFase1</name>
     <events>
+        <variable constant="0" name="Nivel" sid="350049348445526" static="0" type="number">0</variable>
         <variable constant="0" name="pontuacao" sid="343500990174966" static="0" type="number">0</variable>
         <event-block sid="895641223189778">
             <conditions>
@@ -468,5 +469,116 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="124014747287548">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="491288033165606" type="System">
+                    <param id="0" name="First value">Asteroide.Count</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="821009986425199" type="System">
+                    <param id="0" name="Variable">Nivel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="947366163576389">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="307150628340103" type="System">
+                            <param id="0" name="Count">Nivel</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="439521211144019" type="System">
+                            <param id="0" name="Object to create">Asteroide</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">random(800)</param>
+                            <param id="3" name="Y">random(600)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <variable constant="0" name="correnteSize" sid="267573468643518" static="0" type="number">0</variable>
+        <variable constant="0" name="px" sid="135192516116965" static="0" type="number">0</variable>
+        <variable constant="0" name="py" sid="591550390860792" static="0" type="number">0</variable>
+        <event-group description="" sid="888964857341558" title="Comportamento asteroide">
+            <sub-events>
+                <event-block sid="589431399359155">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="275534821717570" type="Asteroide">
+                            <param id="0" name="Object">projeto</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="900505969610790" type="System">
+                            <param id="0" name="Variable">pontuacao</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="629939479422680" type="System">
+                            <param id="0" name="Variable">correnteSize</param>
+                            <param id="1" name="Value">Asteroide.size</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="386073838730787" type="System">
+                            <param id="0" name="Variable">px</param>
+                            <param id="1" name="Value">Asteroide.X</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="988670350297969" type="System">
+                            <param id="0" name="Variable">py</param>
+                            <param id="1" name="Value">Asteroide.Y</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="200282753812827" type="Asteroide" />
+                        <action id="-9" name="Destroy" sid="726366600903849" type="projeto" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="887977487902691">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="681092294652828" type="System">
+                                    <param id="0" name="First value">correnteSize</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="811722685444050" type="System">
+                                    <param id="0" name="Variable">correnteSize</param>
+                                    <param id="1" name="Value">0.5</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="175164115637274">
+                                    <conditions>
+                                        <condition id="-12" name="Repeat" sid="960686292318786" type="System">
+                                            <param id="0" name="Count">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="619874379094175" type="System">
+                                            <param id="0" name="Object to create">Asteroide</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">px</param>
+                                            <param id="3" name="Y">py</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="797762589701923" type="Asteroide">
+                                            <param id="0" name="Instance variable">size</param>
+                                            <param id="1" name="Value">correnteSize</param>
+                                        </action>
+                                        <action id="-7" name="Set size" sid="786904798514393" type="Asteroide">
+                                            <param id="0" name="Width">Asteroide.Width/correnteSize</param>
+                                            <param id="1" name="Height">Asteroide.Height/correnteSize</param>
+                                        </action>
+                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="404459183554638" type="Asteroide">
+                                            <param id="0" name="Angle">random(0,360)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
