@@ -39,8 +39,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>427</x>
-                        <y>239</y>
+                        <x>427.5</x>
+                        <y>240</y>
                         <z>0</z>
                         <width>854</width>
                         <height>480</height>
@@ -97,60 +97,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="texto_btn_Jogar" uid="19">
-                    <properties>
-                        <text>PLAY</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-48,400,0</font>
-                        <color>255,255,255</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>334</x>
-                        <y>196</y>
-                        <z>0</z>
-                        <width>170</width>
-                        <height>94</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="texto_Btn_Creditos" uid="20">
-                    <properties>
-                        <text>CREDITS</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-48,400,0</font>
-                        <color>255,255,255</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>289</x>
-                        <y>285</y>
-                        <z>0</z>
-                        <width>256</width>
-                        <height>70</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Sprite8" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -187,8 +133,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>520</x>
-                        <y>211</y>
+                        <x>376</x>
+                        <y>220</y>
                         <z>0</z>
                         <width>72</width>
                         <height>24</height>
@@ -211,8 +157,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>541</x>
-                        <y>291</y>
+                        <x>376</x>
+                        <y>275</y>
                         <z>0</z>
                         <width>72</width>
                         <height>24</height>

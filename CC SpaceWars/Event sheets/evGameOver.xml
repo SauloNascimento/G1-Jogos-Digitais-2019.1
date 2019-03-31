@@ -7,14 +7,48 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="642019598891606" type="System" />
             </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="542623368503351" type="sprPontuacao">
-                    <param id="0" name="Text">pontuacao</param>
-                </action>
-                <action id="-15" name="Set visible" sid="154894789026817" type="sprPontuacao">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="313498932003374">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="832197600473647" type="System">
+                            <param id="0" name="Variable">pontuacao</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">recorde</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="866944986879755" type="System">
+                            <param id="0" name="Variable">recorde</param>
+                            <param id="1" name="Value">pontuacao</param>
+                        </action>
+                        <action id="0" name="Set item" sid="229417529179343" type="LocalStorage">
+                            <param id="0" name="Key">&quot;record&quot;</param>
+                            <param id="1" name="Value">pontuacao</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="188448400110735" type="sprNewRecord">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="813529028510355">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set text" sid="542623368503351" type="sprPontuacao">
+                            <param id="0" name="Text">pontuacao</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="154894789026817" type="sprPontuacao">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="929565895636813" type="sprRecord2">
+                            <param id="0" name="Text">recorde</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="326409516806178" type="sprRecord2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="186702990621074">
             <conditions>

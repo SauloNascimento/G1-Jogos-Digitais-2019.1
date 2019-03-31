@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evMenu</name>
     <events>
+        <variable constant="0" name="recorde" sid="156438244297005" static="0" type="number">0</variable>
         <event-block sid="809982911613923">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="515345526348435" type="System" />
@@ -13,6 +14,9 @@
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">20</param>
                     <param id="1" name="Tag (optional)">&quot;menuAudio&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="997831942890917" type="LocalStorage">
+                    <param id="0" name="Key">&quot;record&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -47,6 +51,31 @@
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">20</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="302517520990575">
+            <conditions>
+                <condition id="9" name="On item exists" sid="353616135745334" type="LocalStorage">
+                    <param id="0" name="Key">&quot;record&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="638113628213708" type="LocalStorage">
+                    <param id="0" name="Key">&quot;record&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="897956184656990">
+            <conditions>
+                <condition id="1" name="On item get" sid="979295022828989" type="LocalStorage">
+                    <param id="0" name="Key">&quot;record&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="895107142987097" type="System">
+                    <param id="0" name="Variable">recorde</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
                 </action>
             </actions>
         </event-block>

@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -974,6 +975,9 @@
                 <behavior-type name="Bullet" sid="297608336860894">
                     <behavior id="Bullet" />
                 </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="818861436974399">
+                    <behavior id="destroy" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508593246733470" speed="5">
@@ -1726,6 +1730,18 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="LocalStorage" sid="312533882379138">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="sprNomeRecord" sid="672300307280988">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="sprRecord2" sid="963195949089654">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="sprNewRecord" sid="575138794876543">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1762,6 +1778,7 @@
             </properties>
         </global-instance>
         <global-instance type="Mouse" uid="21" />
+        <global-instance type="LocalStorage" uid="10" />
     </global-instances>
     <sounds-folder>
         <file name="Bump2.m4a" />
