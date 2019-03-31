@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evFase1</name>
+    <events>
+        <event-block sid="895641223189778">
+            <conditions>
+                <condition id="3" name="On key released" sid="619087493752415" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="195857774457731" type="player">
+                    <param id="0" name="Object">projeto</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="648146310319036" type="projeto">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+                <action id="0" name="Play" sid="691311087543841" type="Audio">
+                    <param id="0" name="Audio file">Bump2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">20</param>
+                    <param id="1" name="Tag (optional)">&quot;2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="296911034579365">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="695982245604200" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="242559196929485" type="thrust_orange_big">
+                    <param id="0" name="Pin to">player</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="440953787850351">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="969645188007963" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="883328261754588" type="Background">
+                    <param id="0" name="Y">Background.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="460046031890610" type="crescent">
+                    <param id="0" name="X">Self.X</param>
+                    <param id="1" name="Y">Self.Y + 0.1</param>
+                </action>
+                <action id="-3" name="Set position" sid="234110518146062" type="saucer">
+                    <param id="0" name="X">Self.X</param>
+                    <param id="1" name="Y">Self.Y + 0.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="535927749669897">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="151271421011677" type="projeto">
+                    <param id="0" name="Object">saucer</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="987533264254910" type="saucer" />
+                <action id="-3" name="Create object" sid="684539971104730" type="System">
+                    <param id="0" name="Object to create">Exp_type_C</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">projeto.X</param>
+                    <param id="3" name="Y">projeto.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="415265848661310" type="projeto" />
+                <action id="0" name="Play" sid="191606937451460" type="Audio">
+                    <param id="0" name="Audio file">Explosion 2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;1&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="992618960426114" type="System">
+                    <param id="0" name="Variable">pontuacao</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="0" name="Set text" sid="264369538561522" type="pontuacao">
+                    <param id="0" name="Text">pontuacao</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="333511255735404">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="770536836067069" type="projeto">
+                    <param id="0" name="Object">slicer</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="408156901431235" type="slicer" />
+                <action id="-3" name="Create object" sid="352179824741605" type="System">
+                    <param id="0" name="Object to create">Exp_type_C</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">projeto.X</param>
+                    <param id="3" name="Y">projeto.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="264317134811929" type="projeto" />
+                <action id="0" name="Play" sid="613712582601511" type="Audio">
+                    <param id="0" name="Audio file">Explosion 2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;1&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="508428282278289" type="System">
+                    <param id="0" name="Variable">pontuacao</param>
+                    <param id="1" name="Value">15</param>
+                </action>
+                <action id="0" name="Set text" sid="133279148405816" type="pontuacao">
+                    <param id="0" name="Text">pontuacao</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="183567318300593">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="363291200652424" type="projeto">
+                    <param id="0" name="Object">crescent</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="840057026026477" type="crescent" />
+                <action id="-3" name="Create object" sid="214215105531090" type="System">
+                    <param id="0" name="Object to create">Exp_type_C</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">projeto.X</param>
+                    <param id="3" name="Y">projeto.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="381970245214595" type="projeto" />
+                <action id="0" name="Play" sid="419618110068888" type="Audio">
+                    <param id="0" name="Audio file">Explosion 2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;1&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="869004631607088" type="System">
+                    <param id="0" name="Variable">pontuacao</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="0" name="Set text" sid="724620407144289" type="pontuacao">
+                    <param id="0" name="Text">pontuacao</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="907352675606999">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="938601598684664" type="System">
+                    <param id="0" name="Interval (seconds)">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="949839874331768" type="crescent">
+                    <param id="0" name="Object">rocket_type_A</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="196928296112103" type="rocket_type_A">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="546747199790149">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="175002209930409" type="rocket_type_A">
+                    <param id="0" name="Object">player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="814626228486421" type="Audio">
+                    <param id="0" name="Audio file">Airshot1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">20</param>
+                    <param id="1" name="Tag (optional)">&quot;shotOnPlayer&quot;</param>
+                </action>
+                <action id="-3" name="Create object" sid="657007421294739" type="System">
+                    <param id="0" name="Object to create">Exp_type_C</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">player.X</param>
+                    <param id="3" name="Y">player.Y</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="416322938452317" type="player">
+                    <param id="0" name="Instance variable">minhaVida</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="220649189996554">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="346821066277171" type="rocket_typeB">
+                    <param id="0" name="Object">player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="198788028192053" type="Audio">
+                    <param id="0" name="Audio file">Airshot1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">20</param>
+                    <param id="1" name="Tag (optional)">&quot;shotOnPlayer&quot;</param>
+                </action>
+                <action id="-3" name="Create object" sid="659647430675745" type="System">
+                    <param id="0" name="Object to create">Exp_type_C</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">player.X</param>
+                    <param id="3" name="Y">player.Y</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="152373776674385" type="player">
+                    <param id="0" name="Instance variable">minhaVida</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <variable constant="0" name="pontuacao" sid="343500990174966" static="0" type="number">0</variable>
+        <event-block sid="718213617341847">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="928033406127093" type="player">
+                    <param id="0" name="Instance variable">minhaVida</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="425626334024005" type="Audio">
+                    <param id="0" name="Audio file">Explosion 5</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">30</param>
+                    <param id="1" name="Tag (optional)">&quot;deathExplosion&quot;</param>
+                </action>
+                <action id="-3" name="Create object" sid="485892808175468" type="System">
+                    <param id="0" name="Object to create">Exp_type_A</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">player.X</param>
+                    <param id="3" name="Y">player.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="409118583405610" type="player" />
+                <action id="-9" name="Destroy" sid="313996463344645" type="thrust_orange_big" />
+                <action id="-2" name="Go to layout" sid="145402262662872" type="System">
+                    <param id="0" name="Layout">layoutGameOver</param>
+                </action>
+                <action id="33" name="Stop all" sid="848396437579314" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="110579853570968">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="562699741020955" type="System">
+                    <param id="0" name="Interval (seconds)">1.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="506480366720233" type="saucer">
+                    <param id="0" name="Object">rocket_typeC</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="177541544386492">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="394504907828623" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="897914165420173" type="Exp_type_C" />
+            </actions>
+        </event-block>
+        <event-block sid="709480899601722">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="911194437750724" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="710513027928911" type="Exp_type_A" />
+            </actions>
+        </event-block>
+        <event-block sid="609309814263497">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="877612500361316" type="crescent">
+                    <param id="0" name="Object">player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="772368857865966" type="Audio">
+                    <param id="0" name="Audio file">Explosion 5</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="967604876824661" type="player">
+                    <param id="0" name="Instance variable">minhaVida</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="420893179112037">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="843275100206793" type="saucer">
+                    <param id="0" name="Object">player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="901135025013295" type="Audio">
+                    <param id="0" name="Audio file">Explosion 5</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="110913511494060" type="player">
+                    <param id="0" name="Instance variable">minhaVida</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="991872998717344">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="454382927473402" type="rocket_typeC">
+                    <param id="0" name="Object">player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="470167089830269" type="Audio">
+                    <param id="0" name="Audio file">Explosion 5</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">30</param>
+                    <param id="1" name="Tag (optional)">&quot;deathExplosion&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="217750352163589" type="player">
+                    <param id="0" name="Instance variable">minhaVida</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="160458635911524">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="193847709758689" type="System">
+                    <param id="0" name="Interval (seconds)">1.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="404734312678669" type="slicer">
+                    <param id="0" name="Object">rocket_typeB</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="397427374635564" type="rocket_typeB">
+                    <param id="0" name="Angle">90</param>
+                </action>
+                <action id="-16" name="Wait" sid="333420286290602" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="709037347028819" type="slicer">
+                    <param id="0" name="Object">rocket_typeB</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="147046493005172" type="rocket_typeB">
+                    <param id="0" name="Angle">90</param>
+                </action>
+                <action id="-16" name="Wait" sid="415088858000318" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="227265210737635" type="slicer">
+                    <param id="0" name="Object">rocket_typeB</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="656982600261368" type="rocket_typeB">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="443213331338793">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="606103744181127" type="slicer">
+                    <param id="0" name="Object">player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="328753077206581" type="Audio">
+                    <param id="0" name="Audio file">Explosion 5</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="695224433007210" type="player">
+                    <param id="0" name="Instance variable">minhaVida</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="413688118271047">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="878973852962806" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="569449125419525" type="System">
+                    <param id="0" name="Object to create">crescent</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(30, 820)</param>
+                    <param id="3" name="Y">-20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="399043882895096">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="752971025606723" type="System">
+                    <param id="0" name="Interval (seconds)">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="313509291827057" type="System">
+                    <param id="0" name="Object to create">saucer</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(100, 700)</param>
+                    <param id="3" name="Y">-20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="815161199050877">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="641619441289950" type="System">
+                    <param id="0" name="Interval (seconds)">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="795318507889165" type="System">
+                    <param id="0" name="Object to create">slicer</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(300, 500)</param>
+                    <param id="3" name="Y">-20</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

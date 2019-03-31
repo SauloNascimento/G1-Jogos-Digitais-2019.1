@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evGameOver</name>
+    <events>
+        <event-block sid="447146230575790">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="642019598891606" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="542623368503351" type="sprPontuacao">
+                    <param id="0" name="Text">pontuacao</param>
+                </action>
+                <action id="-15" name="Set visible" sid="154894789026817" type="sprPontuacao">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="186702990621074">
+            <conditions>
+                <condition id="0" name="On clicked" sid="889289918508020" type="btn_reiniciar" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="360784521517128" type="System">
+                    <param id="0" name="Layout">layoutFase1</param>
+                </action>
+                <action id="0" name="Play" sid="875821457877025" type="Audio">
+                    <param id="0" name="Audio file">Menu Click 3</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="785603872892679" type="System">
+                    <param id="0" name="Variable">pontuacao</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="123171407319973">
+            <conditions>
+                <condition id="0" name="On clicked" sid="417383647729060" type="btn_voltarmenu" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="615852141446493" type="System">
+                    <param id="0" name="Layout">layoutMenu</param>
+                </action>
+                <action id="0" name="Play" sid="266008080426256" type="Audio">
+                    <param id="0" name="Audio file">Menu Click 3</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="268056063101824" type="System">
+                    <param id="0" name="Variable">pontuacao</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

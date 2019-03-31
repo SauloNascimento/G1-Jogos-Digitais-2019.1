@@ -1,0 +1,1791 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>projeto</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>19frmmd5tmo9m</unique-id>
+    <saved-with-version>26700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>855</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>layoutMenu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="epaço" sid="729463557727336">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="167500996113193" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Music\epaço1.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background" sid="554473979360914">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508228778272376" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Backgrounds\Background3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="619737447315863">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="973799707079947" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Music\nc0cxv.png">
+                        <collision-poly>
+                            <point x="0.0745192" y="0.099359" />
+                            <point x="0.5" y="0.0576923" />
+                            <point x="0.920673" y="0.105769" />
+                            <point x="0.935096" y="0.5" />
+                            <point x="0.745192" y="0.660256" />
+                            <point x="0.5" y="0.967949" />
+                            <point x="0.0432692" y="0.942308" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Music\nc0cxv.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="653584131166832">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="766587766295209" speed="5">
+                    <frame duration="1" hotspotX="0.504831" hotspotY="0.5" original-source="C:\Users\Lenin\Music\nc0cxv.png">
+                        <collision-poly>
+                            <point x="0.0772947" y="0.101911" />
+                            <point x="0.504831" y="0.0605096" />
+                            <point x="0.927536" y="0.10828" />
+                            <point x="0.942029" y="0.5" />
+                            <point x="0.751208" y="0.659236" />
+                            <point x="0.504831" y="0.964968" />
+                            <point x="0.0458937" y="0.93949" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player" sid="389980834673480">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="vida pra eu morrer" name="minhaVida" sid="920274235811981" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="751710466173747">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="276990198389337">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="742911937505335">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="64" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486068468825784" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0000.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.101563" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0001.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0002.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0003.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0004.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0005.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0006.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0007.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0008.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0009.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0010.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0011.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0012.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0013.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0014.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0015.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0016.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0017.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.648438" y="0.351563" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0018.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.382813" y="0.382813" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0019.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.648438" y="0.351563" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0020.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0021.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.648438" y="0.351563" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0022.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.648438" y="0.351563" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0023.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0024.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.648438" y="0.351563" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0025.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0026.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.648438" y="0.351563" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0027.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.648438" y="0.351563" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0028.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.382813" y="0.382813" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0029.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.648438" y="0.351563" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0030.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.648438" y="0.351563" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0031.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.609375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0032.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0033.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.351563" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0034.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.351563" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0035.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.351563" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0036.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.351563" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0037.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.617188" y="0.382813" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0038.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.351563" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0039.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0040.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.351563" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0041.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.351563" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0042.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.617188" y="0.382813" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0043.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.351563" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0044.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.351563" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0045.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0046.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.351563" y="0.351563" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0047.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.382813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0048.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0049.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0050.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0051.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0052.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0053.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0054.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0055.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0056.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0057.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0058.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0059.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0060.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0061.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0062.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Player\player0063.png">
+                        <image-point name="Imagepoint 1" x="0.507813" y="0.117188" />
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gamepad" sid="588078443485137">
+            <plugin id="gamepad" />
+        </object-type>
+        <object-type name="Keyboard" sid="765936316817851">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="projeto" sid="320220065455695">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="297608336860894">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508593246733470" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\FX\projectile_bolt_blue_single.png">
+                        <collision-poly>
+                            <point x="0.84375" y="0.37037" />
+                            <point x="0.921875" y="0.481481" />
+                            <point x="0.84375" y="0.62963" />
+                            <point x="0.546875" y="0.481481" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="thrust_orange_big" sid="971052036086085">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="848969031901977">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="16" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="165792435048602" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.484375">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.484375" hotspotY="0.515625">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="crescent" sid="688412468547269">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="222746066626579">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="394042181331677" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\crescent0000.png">
+                        <collision-poly>
+                            <point x="0.335938" y="0.335938" />
+                            <point x="0.5" y="0.257813" />
+                            <point x="0.664063" y="0.335938" />
+                            <point x="0.796875" y="0.5" />
+                            <point x="0.664063" y="0.664063" />
+                            <point x="0.5" y="0.742188" />
+                            <point x="0.335938" y="0.664063" />
+                            <point x="0.203125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="saucer" sid="960678931370313">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="vida do inimigo" name="vidaEnemi" sid="321523754857244" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="564610474061677">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="516302611445673">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="16" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="138850249959853" speed="5">
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.515625" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0000.png">
+                        <image-point name="tiroinimigo" x="0.515625" y="0.789063" />
+                        <collision-poly>
+                            <point x="0.296875" y="0.296875" />
+                            <point x="0.5" y="0.179688" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.773438" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.796875" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.226563" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0001.png">
+                        <collision-poly>
+                            <point x="0.273438" y="0.273438" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.820313" y="0.5" />
+                            <point x="0.695313" y="0.695313" />
+                            <point x="0.5" y="0.765625" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.234375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0002.png">
+                        <collision-poly>
+                            <point x="0.304688" y="0.304688" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.726563" y="0.273438" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.695313" y="0.695313" />
+                            <point x="0.5" y="0.765625" />
+                            <point x="0.289063" y="0.710938" />
+                            <point x="0.234375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0003.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.179688" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.789063" y="0.5" />
+                            <point x="0.726563" y="0.726563" />
+                            <point x="0.5" y="0.773438" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.242188" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0004.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.226563" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.828125" y="0.5" />
+                            <point x="0.703125" y="0.703125" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.203125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0005.png">
+                        <collision-poly>
+                            <point x="0.320313" y="0.320313" />
+                            <point x="0.5" y="0.234375" />
+                            <point x="0.726563" y="0.273438" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.703125" y="0.703125" />
+                            <point x="0.5" y="0.820313" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.242188" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0006.png">
+                        <collision-poly>
+                            <point x="0.289063" y="0.289063" />
+                            <point x="0.5" y="0.234375" />
+                            <point x="0.695313" y="0.304688" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.789063" />
+                            <point x="0.304688" y="0.695313" />
+                            <point x="0.234375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0007.png">
+                        <collision-poly>
+                            <point x="0.320313" y="0.320313" />
+                            <point x="0.5" y="0.242188" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.820313" y="0.5" />
+                            <point x="0.703125" y="0.703125" />
+                            <point x="0.5" y="0.789063" />
+                            <point x="0.273438" y="0.726563" />
+                            <point x="0.226563" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0008.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.203125" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.773438" y="0.5" />
+                            <point x="0.703125" y="0.703125" />
+                            <point x="0.5" y="0.828125" />
+                            <point x="0.296875" y="0.703125" />
+                            <point x="0.226563" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0009.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.242188" />
+                            <point x="0.679688" y="0.320313" />
+                            <point x="0.773438" y="0.5" />
+                            <point x="0.726563" y="0.726563" />
+                            <point x="0.5" y="0.789063" />
+                            <point x="0.296875" y="0.703125" />
+                            <point x="0.179688" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0010.png">
+                        <collision-poly>
+                            <point x="0.304688" y="0.304688" />
+                            <point x="0.5" y="0.226563" />
+                            <point x="0.710938" y="0.289063" />
+                            <point x="0.765625" y="0.5" />
+                            <point x="0.695313" y="0.695313" />
+                            <point x="0.5" y="0.789063" />
+                            <point x="0.265625" y="0.734375" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0011.png">
+                        <collision-poly>
+                            <point x="0.273438" y="0.273438" />
+                            <point x="0.5" y="0.234375" />
+                            <point x="0.679688" y="0.320313" />
+                            <point x="0.757813" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.820313" />
+                            <point x="0.296875" y="0.703125" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0012.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.296875" />
+                            <point x="0.5" y="0.226563" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.796875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.773438" />
+                            <point x="0.296875" y="0.703125" />
+                            <point x="0.171875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0013.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.296875" />
+                            <point x="0.5" y="0.179688" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.757813" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.773438" />
+                            <point x="0.273438" y="0.726563" />
+                            <point x="0.210938" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0014.png">
+                        <collision-poly>
+                            <point x="0.273438" y="0.273438" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.695313" y="0.304688" />
+                            <point x="0.765625" y="0.5" />
+                            <point x="0.710938" y="0.710938" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.304688" y="0.695313" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Enemies\saucer0015.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.296875" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.726563" y="0.273438" />
+                            <point x="0.765625" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.757813" />
+                            <point x="0.304688" y="0.695313" />
+                            <point x="0.179688" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Exp_type_A" sid="305549444914021">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="40" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="376826885649136" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="247406505221867">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Exp_type_C" sid="656659948422013">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="48" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="772573704961667" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rocket_type_A" sid="913983243038350">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="664853692207420">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="461585816797087">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="664730122323567" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.53125" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Rockets\rocket_type_A0000.png">
+                        <collision-poly>
+                            <point x="0.625" y="0.375" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.625" y="0.625" />
+                            <point x="0.5" y="0.625" />
+                            <point x="0.4375" y="0.5625" />
+                            <point x="0.125" y="0.5" />
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5" y="0.375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sprMenu" sid="774431164568567">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="434367756352930" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kelvi\Desktop\Backgrounds\black.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="597020111456876">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Text" sid="113258895530128">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="sprCreditos" sid="228458690924930">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134202772591799" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kelvi\Desktop\Backgrounds\black.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="disciplina" sid="383724037808368">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CriadoPor" sid="773903263633433">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="nomeKelvin" sid="604314307886291">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="nomeSaulo" sid="587758799565067">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="textoBtnVoltar" sid="343433459623094">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="titulo" sid="553255841646821">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="texto_btn_Jogar" sid="996361057757578">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="texto_Btn_Creditos" sid="721155809615625">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite8" sid="356517546716393">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="234401679278786" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kelvi\Desktop\wr97endk23d\Sprites\Space\Player\player0000.png">
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.398438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="260265617596216">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="pontuacao" sid="447493779872218">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="sprFimDeJogo" sid="995556519463470">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173535438285583" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kelvi\Desktop\wr97endk23d\Sprites\Space\Backgrounds\Background3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sprGameOver" sid="152098854774516">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="sprNomePontuacao" sid="738762840883519">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="sprPontuacao" sid="571968948478587">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="rocket_typeC" sid="609302660954953">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="713272845603066">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="251828515238658">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="939518202010727" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kelvi\Desktop\rocket_type_B0008.png">
+                        <collision-poly>
+                            <point x="0.34375" y="0.34375" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.65625" y="0.34375" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nomeIsaias" sid="706000934641205">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="nomeAlberto" sid="526929401134684">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Reiniciar" sid="687835513174527">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Voltar" sid="587228510625839">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="btn_voltarmenu" sid="376998839385504">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="btn_reiniciar" sid="356236272741161">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="btn_play" sid="309736173521596">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="btn_credits" sid="497291371269924">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="slicer" sid="679497486492190">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="756011110824429">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="16" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="858496414653921" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0000.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.164063" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.5" y="0.828125" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0001.png">
+                        <collision-poly>
+                            <point x="0.320313" y="0.320313" />
+                            <point x="0.5" y="0.164063" />
+                            <point x="0.679688" y="0.320313" />
+                            <point x="0.679688" y="0.5" />
+                            <point x="0.5" y="0.828125" />
+                            <point x="0.320313" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0002.png">
+                        <collision-poly>
+                            <point x="0.351563" y="0.351563" />
+                            <point x="0.5" y="0.164063" />
+                            <point x="0.648438" y="0.351563" />
+                            <point x="0.648438" y="0.5" />
+                            <point x="0.617188" y="0.617188" />
+                            <point x="0.5" y="0.828125" />
+                            <point x="0.382813" y="0.617188" />
+                            <point x="0.351563" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0003.png">
+                        <collision-poly>
+                            <point x="0.320313" y="0.320313" />
+                            <point x="0.5" y="0.164063" />
+                            <point x="0.679688" y="0.320313" />
+                            <point x="0.679688" y="0.5" />
+                            <point x="0.5" y="0.828125" />
+                            <point x="0.320313" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Enemies\slicer0015.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rocket_typeB" sid="284698576510058">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="921472851287480">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="584421267485826">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="217875330326980" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Missiles\spaceMissiles_012.png">
+                        <collision-poly>
+                            <point x="0.8125" y="0.863636" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1875" y="0.863636" />
+                            <point x="0.0625" y="0.0454546" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0454546" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>layoutFase1.xml</layout>
+        <layout>layoutMenu.xml</layout>
+        <layout>layoutCreditos.xml</layout>
+        <layout>layoutGameOver.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>evFase1.xml</event-sheet>
+        <event-sheet>evMenu.xml</event-sheet>
+        <event-sheet>evCreditos.xml</event-sheet>
+        <event-sheet>evGameOver.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Gamepad" uid="3">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="4" />
+        <global-instance type="Audio" uid="13">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="21" />
+    </global-instances>
+    <sounds-folder>
+        <file name="Bump2.m4a" />
+        <file name="Bump2.ogg" />
+        <file name="Explosion 2.m4a" />
+        <file name="Explosion 2.ogg" />
+        <file name="MattOglseby - 3.m4a" />
+        <file name="MattOglseby - 3.ogg" />
+        <file name="Explosion 5.m4a" />
+        <file name="Explosion 5.ogg" />
+        <file name="Airshot1.m4a" />
+        <file name="Airshot1.ogg" />
+        <file name="Menu Click 3.m4a" />
+        <file name="Menu Click 3.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

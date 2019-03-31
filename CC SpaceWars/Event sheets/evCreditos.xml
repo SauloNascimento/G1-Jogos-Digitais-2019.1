@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evCreditos</name>
+    <events>
+        <event-block sid="924953041324574">
+            <conditions>
+                <condition id="0" name="On clicked" sid="423434955413825" type="btn_voltarmenu" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="873277539750456" type="System">
+                    <param id="0" name="Layout">layoutMenu</param>
+                </action>
+                <action id="0" name="Play" sid="758449944668244" type="Audio">
+                    <param id="0" name="Audio file">Menu Click 3</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
