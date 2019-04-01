@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evFase1</name>
     <events>
-        <variable constant="0" name="Nivel" sid="350049348445526" static="0" type="number">0</variable>
         <variable constant="0" name="pontuacao" sid="343500990174966" static="0" type="number">0</variable>
         <event-block sid="895641223189778">
             <conditions>
@@ -37,16 +36,25 @@
                     <param id="0" name="Pin to">player</param>
                     <param id="1" name="Mode">0</param>
                 </action>
+                <action id="-9" name="Set value" sid="943012616966415" type="System">
+                    <param id="0" name="Variable">pontuacao</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
+        </event-block>
+        <event-block sid="945523629244556">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="663331350917242" type="System">
+                    <param id="0" name="Interval (seconds)">20.0</param>
+                </condition>
+            </conditions>
+            <actions />
         </event-block>
         <event-block sid="440953787850351">
             <conditions>
                 <condition id="-1" name="Every tick" sid="969645188007963" type="System" />
             </conditions>
             <actions>
-                <action id="-2" name="Set Y" sid="883328261754588" type="Background">
-                    <param id="0" name="Y">Background.Y</param>
-                </action>
                 <action id="-3" name="Set position" sid="460046031890610" type="crescent">
                     <param id="0" name="X">Self.X</param>
                     <param id="1" name="Y">Self.Y + 0.3</param>
@@ -58,6 +66,22 @@
                 <action id="-3" name="Set position" sid="334835582619928" type="slicer">
                     <param id="0" name="X">Self.X</param>
                     <param id="1" name="Y">Self.Y + 0.1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="166577444407135" type="Background">
+                    <param id="0" name="Y">Background.Y + (dt*100)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="202315147245685">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="616068076781124" type="Background">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">475</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="882699194640197" type="Background">
+                    <param id="0" name="Y">-220</param>
                 </action>
             </actions>
         </event-block>
@@ -291,8 +315,8 @@
         </event-block>
         <event-block sid="177541544386492">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="394504907828623" type="System">
-                    <param id="0" name="Interval (seconds)">1.0</param>
+                <condition id="4" name="On finished" sid="394504907828623" type="Exp_type_C">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
                 </condition>
             </conditions>
             <actions>
@@ -301,8 +325,8 @@
         </event-block>
         <event-block sid="709480899601722">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="911194437750724" type="System">
-                    <param id="0" name="Interval (seconds)">0.5</param>
+                <condition id="4" name="On finished" sid="911194437750724" type="Exp_type_A">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
                 </condition>
             </conditions>
             <actions>
@@ -427,7 +451,7 @@
         <event-block sid="413688118271047">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="878973852962806" type="System">
-                    <param id="0" name="Interval (seconds)">3</param>
+                    <param id="0" name="Interval (seconds)">random(1, 3)</param>
                 </condition>
             </conditions>
             <actions>
@@ -442,7 +466,7 @@
         <event-block sid="399043882895096">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="752971025606723" type="System">
-                    <param id="0" name="Interval (seconds)">6</param>
+                    <param id="0" name="Interval (seconds)">random(4, 6)</param>
                 </condition>
             </conditions>
             <actions>
@@ -457,7 +481,7 @@
         <event-block sid="815161199050877">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="641619441289950" type="System">
-                    <param id="0" name="Interval (seconds)">10</param>
+                    <param id="0" name="Interval (seconds)">random(7, 10)</param>
                 </condition>
             </conditions>
             <actions>
@@ -469,25 +493,18 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="124014747287548">
+        <event-block sid="697438333207908">
             <conditions>
-                <condition id="-8" name="Compare two values" sid="491288033165606" type="System">
-                    <param id="0" name="First value">Asteroide.Count</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Second value">0</param>
+                <condition id="-6" name="Every X seconds" sid="613671304504145" type="System">
+                    <param id="0" name="Interval (seconds)">random(15, 21)</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-10" name="Add to" sid="821009986425199" type="System">
-                    <param id="0" name="Variable">Nivel</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
+            <actions />
             <sub-events>
-                <event-block sid="947366163576389">
+                <event-block sid="298634212874196">
                     <conditions>
-                        <condition id="-12" name="Repeat" sid="307150628340103" type="System">
-                            <param id="0" name="Count">Nivel</param>
+                        <condition id="-12" name="Repeat" sid="712778827682747" type="System">
+                            <param id="0" name="Count">random (1, 3)</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -495,7 +512,11 @@
                             <param id="0" name="Object to create">Asteroide</param>
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">random(800)</param>
-                            <param id="3" name="Y">random(600)</param>
+                            <param id="3" name="Y">-20</param>
+                        </action>
+                        <action id="-22" name="Set angle toward position" sid="130649977334109" type="Asteroide">
+                            <param id="0" name="X">player.X</param>
+                            <param id="1" name="Y">player.Y</param>
                         </action>
                     </actions>
                 </event-block>
@@ -513,10 +534,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Add to" sid="900505969610790" type="System">
-                            <param id="0" name="Variable">pontuacao</param>
-                            <param id="1" name="Value">10</param>
-                        </action>
                         <action id="-9" name="Set value" sid="629939479422680" type="System">
                             <param id="0" name="Variable">correnteSize</param>
                             <param id="1" name="Value">Asteroide.size</param>
@@ -531,6 +548,13 @@
                         </action>
                         <action id="-9" name="Destroy" sid="200282753812827" type="Asteroide" />
                         <action id="-9" name="Destroy" sid="726366600903849" type="projeto" />
+                        <action id="-10" name="Add to" sid="900505969610790" type="System">
+                            <param id="0" name="Variable">pontuacao</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="982744411326303" type="pontuacao">
+                            <param id="0" name="Text">pontuacao</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="887977487902691">
@@ -580,5 +604,24 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="895094446589897">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="355284979084038" type="Asteroide">
+                    <param id="0" name="Object">player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="294914506837674" type="Audio">
+                    <param id="0" name="Audio file">Explosion 5</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="723313049651641" type="player">
+                    <param id="0" name="Instance variable">minhaVida</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

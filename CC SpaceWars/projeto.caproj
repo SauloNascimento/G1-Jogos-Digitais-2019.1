@@ -23,12 +23,12 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
-        <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -63,14 +63,6 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="167500996113193" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Music\epaço1.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Background" sid="554473979360914">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508228778272376" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lenin\Downloads\wr97endk23d\Sprites\Space\Backgrounds\Background3.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1370,6 +1362,11 @@
         </object-type>
         <object-type name="Exp_type_A" sid="305549444914021">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="660848525899489">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="40" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="376826885649136" speed="20">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -1420,6 +1417,11 @@
         </object-type>
         <object-type name="Exp_type_C" sid="656659948422013">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="317911362797457">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="48" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="772573704961667" speed="20">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -1743,25 +1745,17 @@
         <object-type name="sprNewRecord" sid="575138794876543">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite3" sid="615943974449532">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="757511579552416" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Asteroide" sid="777664036365090">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="size" sid="168196229587407" type="number" />
             </instance-variables>
             <behaviors>
-                <behavior-type name="Wrap" sid="775948485954351">
-                    <behavior id="wrap" />
-                </behavior-type>
                 <behavior-type name="Bullet" sid="112580859354636">
                     <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="296803999807356">
+                    <behavior id="destroy" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -1782,6 +1776,14 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0013.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0014.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Jogos\Rocks\rock_type_A0015.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background" sid="687067500542661">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="798560031230447" speed="5">
+                    <frame duration="1" hotspotX="0.500418" hotspotY="0.5" original-source="C:\Users\SauloSamuel\Desktop\Coisa de Jogos\Usadas no projeto\bg.png" />
                 </animation>
             </animation-folder>
         </object-type>
