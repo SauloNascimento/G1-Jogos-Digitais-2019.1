@@ -10,14 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">layoutMenu</layout>
-        <layout order="2">layoutFase1</layout>
-        <layout order="4">layoutGameOver</layout>
-        <layout order="7">layoutCreditos</layout>
-        <event-sheet order="1">evMenu</event-sheet>
-        <event-sheet active="1" order="3">evFase1</event-sheet>
-        <event-sheet order="5">evGameOver</event-sheet>
-        <event-sheet order="6">evCreditos</event-sheet>
+        <layout order="1">layoutMenu</layout>
+        <layout order="3">layoutFase1</layout>
+        <layout order="5">layoutGameOver</layout>
+        <layout order="8">layoutCreditos</layout>
+        <event-sheet order="2">evMenu</event-sheet>
+        <event-sheet active="1" order="4">evFase1</event-sheet>
+        <event-sheet order="6">evGameOver</event-sheet>
+        <event-sheet order="7">evCreditos</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -54,5 +54,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/rocket_typeB/" />
         <folder expanded="1" path="animation-folder/Asteroide/" />
         <folder expanded="1" path="animation-folder/Background/" />
+        <folder expanded="1" path="animation-folder/Speaker_iconiconscom_/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/speakervolumeoff_iconiconscom_/" />
+        <folder expanded="1" path="animation-folder/speakervolumeoff_iconiconscom_2/" />
+        <folder expanded="1" path="animation-folder/btn_audio/" />
     </folders-expanded>
 </c2uistate>

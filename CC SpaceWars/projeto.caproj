@@ -1787,6 +1787,98 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Speaker_iconiconscom_" sid="559667218649666">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="877514706583125" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Speaker_icon-icons.com_54138.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.15625" />
+                            <point x="0.765625" y="0.234375" />
+                            <point x="0.890625" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.5" y="0.84375" />
+                            <point x="0.109375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="205377217995040">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="533009081338124" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="speakervolumeoff_iconiconscom_" sid="933787578011515">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="922143477309640" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\speaker-volume-off_icon-icons.com_48438.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.333333" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.854167" y="0.145833" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.625" y="0.625" />
+                            <point x="0.5" y="0.8125" />
+                            <point x="0.145833" y="0.854167" />
+                            <point x="0.208333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Speaker_icon-icons.com_54138.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.15625" />
+                            <point x="0.765625" y="0.234375" />
+                            <point x="0.890625" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.5" y="0.84375" />
+                            <point x="0.109375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="speakervolumeoff_iconiconscom_2" sid="734929114231991">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="751441951023293" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\speaker-volume-off_icon-icons.com_48438.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.333333" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.854167" y="0.145833" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.625" y="0.625" />
+                            <point x="0.5" y="0.8125" />
+                            <point x="0.145833" y="0.854167" />
+                            <point x="0.208333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Speaker_icon-icons.com_54138.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.15625" />
+                            <point x="0.765625" y="0.234375" />
+                            <point x="0.890625" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.5" y="0.84375" />
+                            <point x="0.109375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_audio" sid="281720511065167">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="255706107975097" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Speaker_icon-icons.com_54138.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\speaker-volume-off_icon-icons.com_48438.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
