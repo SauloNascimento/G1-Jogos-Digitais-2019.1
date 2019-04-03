@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evGlobalUI</name>
+    <events>
+        <variable constant="0" name="audioGame" sid="663888235456132" static="0" type="number">0</variable>
+        <event-block sid="954067009206031">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="212356726059879" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">btn_audio</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="127675211121994">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="931213419109250" type="System">
+                            <param id="0" name="Variable">audioGame</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="789007328548869" type="System">
+                            <param id="0" name="Variable">audioGame</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="746662966913502" type="btn_audio">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="8" name="Set silent" sid="710634131704490" type="Audio">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="102388737805857">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="814321142244118" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="365996059926363" type="System">
+                            <param id="0" name="Variable">audioGame</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="562564764086350" type="btn_audio">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="8" name="Set silent" sid="528076650410611" type="Audio">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

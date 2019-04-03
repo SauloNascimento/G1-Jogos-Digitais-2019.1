@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evCreditos</name>
     <events>
+        <include>evGlobalUI</include>
         <event-block sid="924953041324574">
             <conditions>
                 <condition id="0" name="On clicked" sid="423434955413825" type="btn_voltarmenu" />
@@ -17,6 +18,14 @@
                     <param id="3" name="Volume">20</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="393523640914246">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="902621495075213" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="435702000317088" type="Audio" />
             </actions>
         </event-block>
     </events>

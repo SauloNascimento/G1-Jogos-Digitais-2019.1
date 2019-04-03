@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evMenu</name>
     <events>
+        <include>evGlobalUI</include>
         <variable constant="0" name="recorde" sid="156438244297005" static="0" type="number">0</variable>
         <event-block sid="809982911613923">
             <conditions>
@@ -28,7 +29,6 @@
                 <action id="-2" name="Go to layout" sid="631306398752350" type="System">
                     <param id="0" name="Layout">layoutFase1</param>
                 </action>
-                <action id="33" name="Stop all" sid="305185710241464" type="Audio" />
                 <action id="0" name="Play" sid="672608850853161" type="Audio">
                     <param id="0" name="Audio file">Menu Click 3</param>
                     <param id="2" name="Loop">0</param>
@@ -42,7 +42,6 @@
                 <condition id="0" name="On clicked" sid="284571296388115" type="btn_credits" />
             </conditions>
             <actions>
-                <action id="33" name="Stop all" sid="486719863364235" type="Audio" />
                 <action id="-2" name="Go to layout" sid="676224441423246" type="System">
                     <param id="0" name="Layout">layoutCreditos</param>
                 </action>
@@ -77,6 +76,14 @@
                     <param id="0" name="Variable">recorde</param>
                     <param id="1" name="Value">LocalStorage.ItemValue</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="902624054772182">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="181766586910589" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="875308929485229" type="Audio" />
             </actions>
         </event-block>
     </events>

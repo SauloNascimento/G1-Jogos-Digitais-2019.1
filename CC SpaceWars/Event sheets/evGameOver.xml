@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evGameOver</name>
     <events>
+        <include>evGlobalUI</include>
         <event-block sid="447146230575790">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="642019598891606" type="System" />
@@ -88,6 +89,14 @@
                     <param id="0" name="Variable">pontuacao</param>
                     <param id="1" name="Value">0</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="137010655706237">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="959697427672197" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="643755580471985" type="Audio" />
             </actions>
         </event-block>
     </events>

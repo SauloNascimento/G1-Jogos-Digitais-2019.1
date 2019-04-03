@@ -24,6 +24,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
@@ -1804,14 +1805,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="205377217995040">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="533009081338124" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="speakervolumeoff_iconiconscom_" sid="933787578011515">
             <plugin id="Sprite" />
             <animation-folder>
@@ -1870,8 +1863,13 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="btn_audio" sid="281720511065167">
+        <object-type global="1" name="btn_audio" sid="281720511065167">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Persist" sid="803554345997076">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="255706107975097" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Alberto\Desktop\JOGOS\Speaker_icon-icons.com_54138.png" />
@@ -1882,8 +1880,9 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>layoutFase1.xml</layout>
+        <layout>GlobalUI.xml</layout>
         <layout>layoutMenu.xml</layout>
+        <layout>layoutFase1.xml</layout>
         <layout>layoutCreditos.xml</layout>
         <layout>layoutGameOver.xml</layout>
     </layout-folder>
@@ -1892,6 +1891,7 @@
         <event-sheet>evMenu.xml</event-sheet>
         <event-sheet>evCreditos.xml</event-sheet>
         <event-sheet>evGameOver.xml</event-sheet>
+        <event-sheet>evGlobalUI.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Gamepad" uid="3">
