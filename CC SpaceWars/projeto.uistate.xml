@@ -10,11 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="4">layoutMenu</layout>
-        <layout order="2">layoutFase1</layout>
         <layout order="0">GlobalUI</layout>
-        <event-sheet order="3">evFase1</event-sheet>
-        <event-sheet order="1">evGlobalUI</event-sheet>
+        <layout order="1">layoutFase1</layout>
+        <layout order="3">layoutMenu</layout>
+        <layout order="4">layoutGameOver</layout>
+        <event-sheet active="1" order="2">evFase1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -55,5 +55,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/speakervolumeoff_iconiconscom_/" />
         <folder expanded="1" path="animation-folder/speakervolumeoff_iconiconscom_2/" />
         <folder expanded="1" path="animation-folder/btn_audio/" />
+        <folder expanded="1" path="animation-folder/bugeye/" />
+        <folder expanded="1" path="animation-folder/piercing_shot/" />
+        <folder expanded="1" path="animation-folder/PiercingShot/" />
+        <folder expanded="1" path="animation-folder/MultiShot/" />
+        <folder expanded="1" path="animation-folder/Comet/" />
+        <folder expanded="1" path="animation-folder/Health/" />
+        <folder expanded="1" path="animation-folder/HealtPill/" />
+        <folder expanded="1" path="animation-folder/LifePill/" />
+        <folder expanded="1" path="animation-folder/fighter/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
     </folders-expanded>
 </c2uistate>
