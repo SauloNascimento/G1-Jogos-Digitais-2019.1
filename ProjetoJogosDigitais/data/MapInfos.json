@@ -1,14 +1,14 @@
 [
 null,
 {"id":1,"expanded":true,"name":"Cidade","order":1,"parentId":0,"scrollX":1423.5,"scrollY":2002.5},
-{"id":2,"expanded":true,"name":"Casa Okabi","order":2,"parentId":1,"scrollX":1300.8,"scrollY":732},
+{"id":2,"expanded":true,"name":"Casa Okabi","order":2,"parentId":1,"scrollX":799.1999999999999,"scrollY":564},
 {"id":3,"expanded":false,"name":"Sotão","order":3,"parentId":2,"scrollX":1300.8,"scrollY":732},
-{"id":4,"expanded":false,"name":"Casa Osvaldo","order":4,"parentId":1,"scrollX":1300.8,"scrollY":732},
-{"id":5,"expanded":true,"name":"Floresta","order":5,"parentId":0,"scrollX":801,"scrollY":585},
-{"id":6,"expanded":false,"name":"Floresta 2","order":6,"parentId":5,"scrollX":3333.3333333333335,"scrollY":792},
+{"id":4,"expanded":false,"name":"Casa Osvaldo","order":4,"parentId":1,"scrollX":640.8,"scrollY":564},
+{"id":5,"expanded":true,"name":"Floresta","order":5,"parentId":0,"scrollX":2239.2,"scrollY":792},
+{"id":6,"expanded":false,"name":"Floresta 2","order":6,"parentId":5,"scrollX":3204,"scrollY":1830},
 {"id":7,"expanded":true,"name":"Passagem Secreta Terra","order":7,"parentId":0,"scrollX":1445.3333333333333,"scrollY":813.3333333333334},
 {"id":8,"expanded":true,"name":"Passagem Secreta Água","order":8,"parentId":7,"scrollX":1445.3333333333333,"scrollY":813.3333333333334},
 {"id":9,"expanded":true,"name":"Passagem Secreta Ar","order":9,"parentId":8,"scrollX":801,"scrollY":550.5},
-{"id":10,"expanded":true,"name":"Passagem Secreta Fogo","order":10,"parentId":9,"scrollX":1626,"scrollY":915},
+{"id":10,"expanded":true,"name":"Passagem Secreta Fogo","order":10,"parentId":9,"scrollX":640.8,"scrollY":489.59999999999997},
 {"id":11,"expanded":false,"name":"Clareira Secreta","order":11,"parentId":0,"scrollX":813,"scrollY":457.5}
 ]
